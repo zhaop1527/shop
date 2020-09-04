@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baili.dao.TbGoodsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baili.pojo.TbGoods">
+        <id column="goods_id" property="goodsId" />
+        <result column="goods_name" property="goodsName" />
+        <result column="goods_prse" property="goodsPrse" />
+        <result column="goods_brand_id" property="goodsBrandId" />
+        <result column="goods_cate_id" property="goodsCateId" />
+        <result column="goods_cates_id" property="goodsCatesId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        goods_id, goods_name, goods_prse, goods_brand_id, goods_cate_id, goods_cates_id
+    </sql>
+
+</mapper>

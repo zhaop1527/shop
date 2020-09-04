@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baili.dao.TbSizeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baili.pojo.TbSize">
+        <id column="size_id" property="sizeId" />
+        <result column="color_id" property="colorId" />
+        <result column="size_name" property="sizeName" />
+        <result column="size_stock" property="sizeStock" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        size_id, color_id, size_name, size_stock
+    </sql>
+
+</mapper>

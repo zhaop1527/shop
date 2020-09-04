@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baili.dao.TbOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baili.pojo.TbOrder">
+        <id column="order_id" property="orderId" />
+        <result column="size_id" property="sizeId" />
+        <result column="order_state" property="orderState" />
+        <result column="order_time" property="orderTime" />
+        <result column="user_id" property="userId" />
+        <result column="order_num" property="orderNum" />
+        <result column="user_add_id" property="userAddId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_id, size_id, order_state, order_time, user_id, order_num, user_add_id
+    </sql>
+
+</mapper>

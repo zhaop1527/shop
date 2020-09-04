@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.baili.dao.TbClothesinforMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.baili.pojo.TbClothesinfor">
+        <id column="clothesinfor_id" property="clothesinforId" />
+        <result column="goods_id" property="goodsId" />
+        <result column="clothesinfor_show" property="clothesinforShow" />
+        <result column="clothesinfor_collor" property="clothesinforCollor" />
+        <result column="clothesinfor_mater" property="clothesinforMater" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        clothesinfor_id, goods_id, clothesinfor_show, clothesinfor_collor, clothesinfor_mater
+    </sql>
+
+</mapper>
